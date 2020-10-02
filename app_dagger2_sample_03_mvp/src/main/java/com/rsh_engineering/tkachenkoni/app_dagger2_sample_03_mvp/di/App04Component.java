@@ -12,7 +12,7 @@ import dagger.Component;
  */
 @Singleton
 @Component(modules =  {App04Module.class, LoginModule.class})
-public interface ApplicationComponent {
+public interface App04Component {
 
     void inject(MainActivity target);
 

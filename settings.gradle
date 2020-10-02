@@ -1,0 +1,5 @@
+include ':app_dagger2_sample_03_mvp'
+include ':app_dagger2_sample_02'
+include ':app_dagger2_sample_01'
+include ':app'
+rootProject.name = "DaggerSampleExample"

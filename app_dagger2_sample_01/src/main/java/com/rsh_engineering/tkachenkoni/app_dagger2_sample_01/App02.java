@@ -15,8 +15,6 @@ public class App02 extends Application {
 
     private App02Component component;
 
-
-
     @Override
     public void onCreate() {
         super.onCreate();

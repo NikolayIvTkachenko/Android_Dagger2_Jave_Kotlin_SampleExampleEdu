@@ -22,7 +22,5 @@ public class MainActivity extends AppCompatActivity {
 
         ((App02) getApplication()).getComponent().inject(this);
 
-
-
     }
 }
