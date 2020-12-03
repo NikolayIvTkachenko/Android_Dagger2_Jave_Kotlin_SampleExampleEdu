@@ -7,6 +7,7 @@ import com.rsh_engineering.tkachenkoni.app_dagger2_sample_07_edu_kotlin.di.modul
 import com.rsh_engineering.tkachenkoni.app_dagger2_sample_07_edu_kotlin.model.Car
 import dagger.BindsInstance
 import dagger.Component
+import javax.inject.Singleton
 
 /**
  *
@@ -14,6 +15,7 @@ import dagger.Component
  *
  */
 
+@Singleton
 @Component(modules = [
     PetrolEngineModule::class,
     //DieselEngineModule::class,

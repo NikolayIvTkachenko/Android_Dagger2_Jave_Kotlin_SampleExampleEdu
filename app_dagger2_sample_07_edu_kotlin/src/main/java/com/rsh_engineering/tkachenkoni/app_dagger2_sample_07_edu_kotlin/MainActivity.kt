@@ -20,10 +20,7 @@ class MainActivity : AppCompatActivity() {
 
 
 
-        var carComponent = DaggerCarComponent
-            .builder()
-            .powerCapacity(300)
-            .build()
+        var carComponent = (application as App).carComponent()
 
         carComponent.inject(this)
 
