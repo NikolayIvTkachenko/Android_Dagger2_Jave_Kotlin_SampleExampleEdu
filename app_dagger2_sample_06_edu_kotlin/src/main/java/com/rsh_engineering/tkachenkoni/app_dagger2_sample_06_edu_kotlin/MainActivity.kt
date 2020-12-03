@@ -3,6 +3,7 @@ package com.rsh_engineering.tkachenkoni.app_dagger2_sample_06_edu_kotlin
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.rsh_engineering.tkachenkoni.app_dagger2_sample_06_edu_kotlin.di.DaggerCarComponent
+import com.rsh_engineering.tkachenkoni.app_dagger2_sample_06_edu_kotlin.di.modules.PetrolEngineModule
 
 import com.rsh_engineering.tkachenkoni.app_dagger2_sample_06_edu_kotlin.model.Car
 import javax.inject.Inject
@@ -17,7 +18,13 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        var carComponent = DaggerCarComponent.create()
+        //var carComponent = DaggerCarComponent.create()
+
+        var carComponent = DaggerCarComponent
+            .builder()
+            .petrolEngineModule( PetrolEngineModule(100))
+            .build()
+
         carComponent.inject(this)
 
         car.start()
