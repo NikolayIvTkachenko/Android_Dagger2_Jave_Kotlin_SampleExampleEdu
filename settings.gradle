@@ -1,3 +1,4 @@
+include ':app_dagger2_sample_06_edu_kotlin'
 include ':app_dagger2_sample_05_edu_kotlin'
 include ':app_dagger2_sample_04_edu_kotlin'
 include ':app_dagger2_sample_03_mvp'
