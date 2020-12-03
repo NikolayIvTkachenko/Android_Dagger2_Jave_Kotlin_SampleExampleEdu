@@ -13,10 +13,15 @@ import dagger.Provides
  */
 
 @Module
-abstract class  PetrolEngineModule {
+class  PetrolEngineModule {
 
-    @Binds
-    abstract fun providesPetrolEngine(petrolEngine: PetrolEngine): Engine
+//    @Binds
+////    abstract fun providesPetrolEngine(petrolEngine: PetrolEngine): Engine
+
+    @Provides
+    fun providesPetrolEngine() : Engine{
+        return PetrolEngine(100)
+    }
 
 
 }
